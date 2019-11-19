@@ -1,0 +1,23 @@
+{
+  "name": "auht0-node-ts",
+  "version": "0.0.1",
+  "description": "A simple Auth0 Node setup using TS",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"tsc -w\" \"nodemon dist/index.js\"",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "auth0": "^2.20.0",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "@types/auth0": "^2.9.23",
+    "concurrently": "^5.0.0",
+    "nodemon": "^1.19.4",
+    "tslint": "^5.20.1",
+    "typescript": "^3.7.2"
+  }
+}
